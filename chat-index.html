@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="chat-style.css">
+    </head>
+
+    <body>
+        <h2>Popup Chat Room</h2>
+        <P>Click on the button at the bottom of this page to open the chat form.</P>
+
+        <button class="open-button" onclick="openForm()">Chat</button>
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type Message.." name="msg" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script src="chat-script.js"></script>
+    </body>
+</html>
