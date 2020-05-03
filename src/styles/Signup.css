@@ -1,0 +1,29 @@
+.mainSignup {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 2em;
+}
+input {
+    margin-top: 3em;
+}
+p {
+    font-size: 30px;
+}
+
+.tosBox {
+    width: 2em;
+    height: 2em;
+    padding-top: 4em;
+}
+
+button {
+    border: none;
+    background-color: pink;
+    color: rgb(101, 4, 131);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
