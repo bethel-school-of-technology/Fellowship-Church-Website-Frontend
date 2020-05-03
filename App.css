@@ -1,0 +1,44 @@
+ul.appMain {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  justify-content: space-evenly;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffd0db;
+  color: rgb(101, 4, 131);
+}
+
+
+li#Login {
+  float: right;
+  color: white;
+}
+
+li#Signup {
+  float: right;
+  color: white;
+}
+
+
+div.homeMain {
+  text-align: center;
+  margin-left: 15em;
+  margin-right: 15em;
+}
