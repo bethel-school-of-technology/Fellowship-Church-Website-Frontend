@@ -11,7 +11,6 @@ import Ministries from './screens/Ministries';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
-import Button from './screens/blah';
 
 
 function App() {
@@ -44,9 +43,6 @@ function App() {
           <li id='Login'>
             <Link to='/Login'>Log In</Link>
           </li>
-          <li id='Button'>
-            <Link to='/blah'>Button</Link>
-          </li>
         </ul>
 
         <Route exact path='/' component={Home} />
@@ -58,7 +54,6 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/terms-of-service' component={TermsofService} />
-        <Route path='/blah' component={Button} />
       </div>
     </Router>
   );
