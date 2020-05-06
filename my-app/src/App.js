@@ -4,7 +4,6 @@ import './styles/BibleStudyStyle.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import AboutUs from './screens/AboutUs';
 import ContactUs from './screens/ContactUs';
-import Chat from './screens/Chat';
 import BibleStudy from './screens/BibleStudy';
 import Resources from './screens/Resources';
 import Home from './screens/Home';
@@ -12,7 +11,7 @@ import Ministries from './screens/Ministries';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsOfService from './screens/TermsOfService';
-import Button from './screens/blah';
+import Chat from './screens/Chat';
 
 
 function App() {
@@ -45,9 +44,6 @@ function App() {
           <li id='Login'>
             <Link to='/Login'>Log In</Link>
           </li>
-          <li id='Button'>
-            <Link to='/blah'>Button</Link>
-          </li>
           <li id='Chat'>
             <Link to='/chat'>Chat</Link>
           </li>
@@ -62,7 +58,6 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/terms-of-service' component={TermsOfService} />
-        <Route path='/blah' component={Button} />
         <Route path='/chat' component={Chat} />
       </div>
     </Router>
