@@ -51,9 +51,9 @@ function App() {
         <Route path='/Bible-Study' component={BibleStudy} />
         <Route path='/Ministries' component={Ministries} />
         <Route path='/Resources' component={Resources} />
-        <Route path='/login' component={Login} />
-        <Route path='/signup' component={Signup} />
-        <Route path='/terms-of-service' component={TermsofService} />
+        <Route path='/Login' component={Login} />
+        <Route path='/Signup' component={Signup} />
+        <Route path='/Terms-of-Service' component={TermsofService} />
       </div>
     </Router>
   );

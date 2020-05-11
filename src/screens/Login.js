@@ -24,13 +24,14 @@ class Login extends React.Component{
 
     render(){
         return(
-        <form className='loginForm'   onSubmit={this.handleSubmit}>
-            Username: <input type='text' value={this.state.value} id='username' onChange={this.handleChange} />
+        <form className='loginForm' method='GET'   onSubmit={this.handleSubmit}>
+            <label for='username'>Username: </label>
+            <input type='text' name='username' value={this.state.value} id='username' onChange={this.handleChange} />
             <br/>
-            Password: <input type='text' id='password' />
+            <label for='password'>Password: </label>
+            <input type='text' name='password' id='password' />
             <br/>
             <input type='submit' className='loginbtn' value='Log In'  />
-            {/* The above should GET a response from the server and use auth to verify username and password. Need to figure out how to make my button do that. */}
             <br/>
             <p>New member? Click <a className='signup' href='/signup'>here</a> to join the fellowship!</p>
         </form>

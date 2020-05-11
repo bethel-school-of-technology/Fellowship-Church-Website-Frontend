@@ -50,25 +50,29 @@ class Signup extends React.Component {
     render() {
         return (
             <div className='mainSignup' id='divId'>
-                <form onSubmit={this.handleSubmit}>
+                <form method='POST' onSubmit={this.handleSubmit}>
                     <p>Please fill out the following information to sign up for an account.</p>
-        First Name:<input id='fname' required='true'/>
+                    <label for='first_name'>First Name: </label>
+                    <input id='fname' name='fist_name' required={true} />
                     <br />
-        Last Name:<input id='lname' required='true'/>
+                    <label for='last_name'>Last Name: </label>
+                    <input id='lname' name='last_name' required={true} />
                     <br />
-        Email:<input id='email' required='true'/>
+                    <label for='email'>Email: </label>
+                    <input id='email' name='email' required={true} />
                     <br />
-        Username:<input id='uname' required='true'  onChange={this.handleChange} />
+                    <label for='username'>Username: </label>
+                    <input id='uname' name='username' required={true} onChange={this.handleChange} />
                     <br />
-        Password:<input id='password' required='true'/>
+                    <label for='password'>Password: </label>
+                    <input id='password' name='password' required={true} />
                     <br />
-                    <input type='checkbox' required='true' className='tosBox' />Agree to <a href='/terms-of-service'>Terms of Service</a>
+                    <input type='checkbox' required={true} className='tosBox' />Agree to <a href='/terms-of-service'>Terms of Service</a>
                     <br />
                     <input type='submit' value='Sign Up!' className='signupBtn' />
-                    {/* The above button should POST to the database and create a new user. Need to figure out how to make my button do that. */}
                 </form>
-            </div>)
-
+            </div>
+            )
     }
 }
 
