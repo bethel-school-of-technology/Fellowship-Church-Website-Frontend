@@ -6,7 +6,7 @@ import './../styles/Chat-style.css';
 const Chat = () => (
     <div> 
     <h2>Popup Chat Room</h2>
-    <P>Click on the button at the bottom of this page to open the chat form.</P>
+    <p>Click on the button at the bottom of this page to open the chat form.</p>
 
     <button className="open-button" onclick="openForm()">Chat</button>
     <div  className="chat-popup" id="myForm">
