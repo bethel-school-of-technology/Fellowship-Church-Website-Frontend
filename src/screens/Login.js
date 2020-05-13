@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Login.css';
+import { Link } from "react-router-dom";
 
 
 class Login extends React.Component{
@@ -33,6 +34,7 @@ class Login extends React.Component{
             {/* The above should GET a response from the server and use auth to verify username and password. Need to figure out how to make my button do that. */}
             <br/>
             <p>New member? Click <a className='signup' href='/signup'>here</a> to join the fellowship!</p>
+            <Link to="/login/reset">Forgot password?</Link>
         </form>
         );
     }
