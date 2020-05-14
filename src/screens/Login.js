@@ -35,6 +35,7 @@ class Login extends React.Component{
             <br/>
             <p>New member? Click <a className='signup' href='/signup'>here</a> to join the fellowship!</p>
             <Link to="/login/reset">Forgot password?</Link>
+            
         </form>
         );
     }
