@@ -117,7 +117,7 @@ export default class ResetPassword extends Component {
         <div>
           <HeaderBar title={title} />
           <div style={loading}>
-            <h4>Problem resetting password. Please send another reset link.</h4>
+            <h4> Password reset unsuccessful. Please send another reset link.</h4>
             <LinkButtons
               buttonText="Go Home"
               buttonStyle={homeButton}
@@ -136,7 +136,7 @@ export default class ResetPassword extends Component {
       return (
         <div>
           <HeaderBar title={title} />
-          <div style={loading}>Loading User Data...</div>
+          <div style={loading}>Loading The User Data...</div>
         </div>
       );
     }
@@ -161,8 +161,8 @@ export default class ResetPassword extends Component {
         {updated && (
           <div>
             <p>
-              Your password has been successfully reset, please try logging in
-              again.
+              Yippy! Your password has been successfully reset, please try logging in
+              now.
             </p>
             <LinkButtons
               buttonStyle={loginButton}

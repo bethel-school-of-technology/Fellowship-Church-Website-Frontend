@@ -130,7 +130,7 @@ class UpdatePassword extends Component {
         <div>
           <HeaderBar title={title} />
           <p style={loading}>
-            There was a problem accessing your data. Please go login again.
+            Oh no! There was a problem accessing your data. Please try to go login again.
           </p>
           <LinkButtons
             style={loginButton}
