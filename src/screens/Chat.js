@@ -1,37 +1,39 @@
 import React from 'react';
-import '../components/chat-script.js';
 import '../styles/Chat-style.css';
 import { render } from '@testing-library/react';
 
 
-const Chat = () => (
+class Chat extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          value: ''
+        };
     
-    function openForm(){
-        document.getElementById("myForm").style.display = "block";
-    },
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
     
-    function closeForm(){
-        document.getElementById("myForm").style.display = "none";
-    },
-
-    render (
-        <div> 
-            <h2>Popup Chat Room</h2>
-            <h3>Click on the button at the bottom of this page to open the chat form.</h3>
-
-            <button className="open-button" onClick={openForm()}>Chat</button>
-            <div  className="chat-popup" id="myForm">
-                <form action="/action_page.php"  className="form-container">
-                    <h1>Chat</h1>
-
-                    <label for="msg"><b>Message</b></label>
-                    <textarea placeholder="Type Message.." name="msg" required></textarea>
-
-                    <button type="submit"  className="btn">Send</button>
-                    <button type="button"  className="btn cancel" onClick={closeForm()}>Close</button>
-                </form>
+      handleChange(event) {
+        this.setState({value: event.target.value});
+      }
+    
+      handleSubmit(event) {
+        alert('A message was submitted: ' + this.state.value);
+        event.preventDefault();
+      }
+      render() {
+        return(
+            <div> 
+              <h2>Need to talk</h2><br/>
+              <p>Just type a message and submit!</p>
+              <form className="form-container" onSubmit={this.handleSubmit} >
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type Message.." value={this.state.value} onChange={this.handleChange} name="msg" required></textarea>
+                <input type="submit" value="Submit" />
+              </form>
             </div>
-        </div>
-    )
-);
+        );
+     }
+}
 export default Chat;
