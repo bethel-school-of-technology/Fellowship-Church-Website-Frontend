@@ -11,6 +11,7 @@ import Ministries from './screens/Ministries';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
+import Chat from './screens/Chat';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
           <li id='Login'>
             <Link to='/Login'>Log In</Link>
           </li>
+          <li id='Chat'>
+            <Link to='/chat'>Chat</Link>
+          </li>
         </ul>
 
         <Route exact path='/' component={Home} />
@@ -51,9 +55,10 @@ function App() {
         <Route path='/Bible-Study' component={BibleStudy} />
         <Route path='/Ministries' component={Ministries} />
         <Route path='/Resources' component={Resources} />
-        <Route path='/Login' component={Login} />
-        <Route path='/Signup' component={Signup} />
-        <Route path='/Terms-of-Service' component={TermsofService} />
+        <Route path='/login' component={Login} />
+        <Route path='/signup' component={Signup} />
+        <Route path='/terms-of-service' component={TermsofService} />
+        <Route path='/chat' component={Chat} />
       </div>
     </Router>
   );
