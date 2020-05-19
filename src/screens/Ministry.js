@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
+
 import '../styles/Ministry.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
+
 
 
 const photos = [ 
@@ -44,8 +47,8 @@ const photos = [
             })};
           </Slider>
         </div>
-      )
+      );
     }
-  }
+  };
 
 export default Ministry;
