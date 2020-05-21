@@ -9,15 +9,15 @@ const BibleStudy = () => (
     </div>
     <div className='packages'>
         <ul>
-        <li>Package 1</li>
+        <li>Home Groups</li><br/>
         <ul>
-            <li>Wax</li>
-            <li>Detail</li>
-            <li>Vaccuum</li>
-            <li>tires</li>
-        </ul>
-        <li>Package 2</li>
-        <li>Package 3</li>
+            <li>Address1</li><br/>
+            <li>Address2</li><br/>
+            <li>Address3</li><br/>
+            <li>Address4</li><br/>
+        </ul><br/>
+        <li>Sunday Morning 8-9am</li><br/>
+        <li>Wed 6-7pm</li><br/>
         </ul>
     </div>
 </div>
