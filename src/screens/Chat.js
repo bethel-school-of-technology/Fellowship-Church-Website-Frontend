@@ -31,6 +31,10 @@ class Chat extends React.Component {
                 <label for="msg"><b>Message</b></label>
                 <textarea placeholder="Type Message.." value={this.state.value} onChange={this.handleChange} name="msg" required></textarea>
                 <input type="submit" value="Submit" />
+ chat
+                
+
+ dev
               </form>
             </div>
         );
