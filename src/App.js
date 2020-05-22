@@ -11,6 +11,7 @@ import Ministries from './screens/Ministries';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
+import OurStaff from './screens/OurStaff';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
           <li>
             <Link to='/Resources'>Resources</Link>
           </li>
+          <li>
+            <Link to='/Our-Staff'>Meet Our Staff</Link>
+          </li>
           <li id='Signup'>
             <Link to='/Signup'>Signup</Link>
           </li>
@@ -54,9 +58,11 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/terms-of-service' component={TermsofService} />
+        <Route path='/Our-Staff' component={OurStaff} />
       </div>
     </Router>
   );
 }
+
 
 export default App;
