@@ -1,18 +1,17 @@
 import React, {useState} from 'react';
 import '../styles/Ministry.scss';
-import ImgComp from "./ImgComp.js"
-import Photo1 from "..src/img/Photo1.jpg";
-import Photo2 from "..src/img/Photo2.jpg";
-import Photo3 from "..src/img/Photo3.jpg";
-import Photo4 from "..src/img/Photo4.jpg";
-import Photo5 from "..src/img/Photo5.jpg";
-
+import ImgComp from '../components/ImgComp.js'
+//import Photo1 from "../img/Photo1.jpg";
+import Photo2 from "../img/Photo2.jpg";
+import Photo3 from "../img/Photo3.jpg";
+import Photo4 from "../img/Photo4.jpg";
+import Photo5 from "../img/Photo5.jpg";
 
 function Carousel() {
   const [x,setX] = useState(0)
   let sliderArr = [
   
-    <ImgComp src={Photo1.jpg} />,
+    //<ImgComp src={Photo1} />,
     <ImgComp src={Photo2} />,
     <ImgComp src={Photo3} />,
     <ImgComp src={Photo4} />,
@@ -31,20 +30,26 @@ function Carousel() {
 
 
 
-return (
-  <div className="slider">
+return(
+  <div className="Carousel">
+        <div>
+          <img src="../img/Photo1.jpg" />
+        </div>
+
     {sliderArr.map((item,index) => {
-        return(
-          <div key={index} className="slide" style={{transform:'translateX(${x}%})'}}>
-           {item}
-          </div>
-        );
+        return(  <div key={index} className="slide" style={{transform:'translateX(${x}%)'}}>
+           {item} </div>)
+  
       })}
+
 
       <button id="goLeft" onClick={goLeft}>
         <i class="fas fa-chevron-left"></i>
       </button>
-      <button id="goRight" onClick={goRight}>Right</button>
+      
+      <button id="goRight" onClick={goRight}>
+      <i class="fas fa-chevron-right"></i>
+      </button>
   </div>
 
 );
