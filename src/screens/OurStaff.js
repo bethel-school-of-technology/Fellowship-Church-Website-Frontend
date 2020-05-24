@@ -5,6 +5,7 @@ import womenspastors from "../images/womenspastors.jpg";
 import Flexbox from 'flexbox-react';
 import '../styles/OurStaff.css';
 
+
 const OurStaff = () => (
 <div class="flex-container">
     <div class="box1">
@@ -30,8 +31,16 @@ const OurStaff = () => (
         <a href="http://www.shepherdsgate.org" target="_blank">Click for Shepherd's Gate Information!</a>
     </div>
 
+
     <div class="footer">
-        <p>Footer</p>
+    <a id="social" href="http://facebook.com/keith.nettles.3" target="_blank">FRIEND US ON FACEBOOK</a>
+    <a id="social" href="http://instagram.com" target="_blank">FOLLOW US ON INSTAGRAM</a>
+    <a id="social" href="http://twitter.com/explore" target="_blank">CHECK OUT OUR TWITTER</a>
+    <a id="social" href="mailto:fellowshipchurchproject@gmail.com" target="_blank">EMAIL US</a>
+        
+
+    
+
 </div>
 
 </div>
