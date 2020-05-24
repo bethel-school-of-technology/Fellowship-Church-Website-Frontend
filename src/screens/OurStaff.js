@@ -23,8 +23,10 @@ const OurStaff = () => (
         <h2>Women's Pastors</h2>
         <p id="nametag">Pastor Faye Connaway and Pastor Dede Nettles</p>
         <img className="womenspastors img-fluid" src={womenspastors} alt=""></img>
-        <p id="description">Pastors Faye and Dede run a dynamic mynistry for women in the church, and the community. Pastor Faye is the founder of the domestic violence outreach Women in Flight.</p>
+        <p id="description">Pastors Faye and Dede run a dynamic mynistry for women in the church, and the community. Pastor Faye is the founder of the domestic violence outreach Shepherd's Gate which serves women and children in our community.</p>
+        <a href="http://www.shepherdsgate.org" target="_blank">Click for Shepherd's Gate Information</a>
     </div>
+
     <div class="footer">
         
     </div>
