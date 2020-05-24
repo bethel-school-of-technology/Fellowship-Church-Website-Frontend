@@ -1,11 +1,59 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
+import '../styles/Ministry.scss';
+import ImgComp from "./ImgComp.js"
+import Photo1 from "..src/img/Photo1.jpg";
+import Photo2 from "..src/img/Photo2.jpg";
+import Photo3 from "..src/img/Photo3.jpg";
+import Photo4 from "..src/img/Photo4.jpg";
+import Photo5 from "..src/img/Photo5.jpg";
 
-import '../styles/Ministry.css';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+
+function Carousel() {
+  const [x,setX] = useState(0)
+  let sliderArr = [
+  
+    <ImgComp src={Photo1.jpg} />,
+    <ImgComp src={Photo2} />,
+    <ImgComp src={Photo3} />,
+    <ImgComp src={Photo4} />,
+    <ImgComp src={Photo5} />
+ 
+  ];
+  
+  const goLeft = () => {
+      console.log(x);
+      x=== 0 ? setX( - 100 * (sliderArr.length - 1)) : setX(x + 100);
+  };
+  const goRight = () => {
+      console.log(x);
+    x=== -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100);
+  };
 
 
+
+return (
+  <div className="slider">
+    {sliderArr.map((item,index) => {
+        return(
+          <div key={index} className="slide" style={{transform:'translateX(${x}%})'}}>
+           {item}
+          </div>
+        );
+      })}
+
+      <button id="goLeft" onClick={goLeft}>
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="goRight" onClick={goRight}>Right</button>
+  </div>
+
+);
+}
+
+
+
+
+/*
 
 
 const photos = [ 
@@ -22,7 +70,7 @@ const photos = [
   ];
   
   
-  class Ministry extends Component {
+  class Ministry extends React.Component {
     render() {
       const settings = {
         dots: true,
@@ -50,5 +98,5 @@ const photos = [
       );
     }
   };
-
-export default Ministry;
+*/
+export default Carousel;
