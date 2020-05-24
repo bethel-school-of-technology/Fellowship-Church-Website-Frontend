@@ -14,8 +14,13 @@ img {
     padding-bottom: 10px;
     height:400px;
     width: auto;
-  
   }
+
+a {
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s; 
+}
 
 P { text-align: center;
     font-size: small;
@@ -47,6 +52,13 @@ h2 {
     
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 150px;
+  }
+  
+
 .box-1 {
     flex: 3;
     order: 3;
@@ -61,3 +73,14 @@ h2 {
     flex: 4;
     order: 4;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+ }
