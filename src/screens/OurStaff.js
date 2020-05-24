@@ -24,7 +24,6 @@ const OurStaff = () => (
         <p id="nametag">Pastor Faye Connaway and Pastor Dede Nettles</p>
         <img className="womenspastors img-fluid" src={womenspastors} alt=""></img>
         <p id="description">Pastors Faye and Dede run a dynamic mynistry for women in the church, and the community. Pastor Faye is the founder of the domestic violence outreach Women in Flight.</p>
-        <href>href="https://shepherdsgate.org/"</href>
     </div>
     <div class="footer">
         
