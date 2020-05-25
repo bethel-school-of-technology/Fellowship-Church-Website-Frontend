@@ -19,8 +19,8 @@ const OurStaff = () => (
         <h2>Assistant Pastors</h2>
         <p id="nametag">Assistant Pastors Jon and Tannith Brown</p>
         <img className="associate img-fluid" src={associate} alt=""></img>
-        <p id="description">Assistant Pastor Jon Brown recieved his Masters degree from Yale Divinity. He has worked under Sr. Pastor Nettles for 3 years. Tannith Brown serves as chior director when she's not busy with dogs, Jacob and Esau.</p>
-        <a href="https://youtu.be/VPpd-6X3tEo" target="_blank">Click to Join the Chior!</a>
+        <p id="description">Assistant Pastor Jon Brown recieved his Masters degree from Yale Divinity. He has worked under Sr. Pastor Nettles for 3 years. Tannith Brown serves as choir director when she's not busy with dogs, Jacob and Esau.</p>
+        <a href="https://youtu.be/VPpd-6X3tEo" target="_blank">Click to Join the Choir!</a>
     
     </div>
     <div class="box3">
