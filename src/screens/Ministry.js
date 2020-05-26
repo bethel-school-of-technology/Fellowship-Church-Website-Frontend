@@ -1,27 +1,25 @@
 import React, {useState} from 'react';
 import '../styles/Ministry.scss';
-import ImgComp from '../components/ImgComp.js'
-//import Photo1 from "../img/Photo1.jpg";
-import Photo2 from "../img/Photo2.jpg";
-import Photo3 from "../img/Photo3.jpg";
-import Photo4 from "../img/Photo4.jpg";
-import Photo5 from "../img/Photo5.jpg";
+import ImgComp from './ImgComp';
+
 
 function Carousel() {
-  const [x,setX] = useState(0)
-  let sliderArr = [
+  const [x, setX] = useState(0);
   
-    //<ImgComp src={Photo1} />,
-    <ImgComp src={Photo2} />,
-    <ImgComp src={Photo3} />,
-    <ImgComp src={Photo4} />,
-    <ImgComp src={Photo5} />
- 
+  let sliderArr = [
+
+    <ImgComp src="/img/Photo1.jpg" alt="I'm"/>,
+    <ImgComp src="/img/Photo2.jpg" alt="having"/>,
+    <ImgComp src="/img/Photo3.jpg" alt="many"/>,
+    <ImgComp src="/img/Photo4.jpg" alt="issues"/>,
+    <ImgComp src="/img/Photo5.jpg" alt="help!"/>
+    
   ];
   
+
   const goLeft = () => {
       console.log(x);
-      x=== 0 ? setX( - 100 * (sliderArr.length - 1)) : setX(x + 100);
+      x=== 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
   };
   const goRight = () => {
       console.log(x);
@@ -31,26 +29,29 @@ function Carousel() {
 
 
 return(
-  <div className="Carousel">
-        <div>
-          <img src="../img/Photo1.jpg" />
-        </div>
+  <div className="carousel">
+        
 
-    {sliderArr.map((item,index) => {
-        return(  <div key={index} className="slide" style={{transform:'translateX(${x}%)'}}>
-           {item} </div>)
+    {sliderArr.map((item, index) => {
+        return(  <div key={index} className="slide" /* style={{transform: translateX('${x}'%)}} */>
+           {item}
+           </div>
+           );
   
       })}
 
 
-      <button id="goLeft" onClick={goLeft}>
-        <i class="fas fa-chevron-left"></i>
+      <button id="goLeft" onClick={goLeft}>previous button
+      
       </button>
       
-      <button id="goRight" onClick={goRight}>
-      <i class="fas fa-chevron-right"></i>
+      <button id="goRight" onClick={goRight}>next button
+     
       </button>
-  </div>
+
+
+    
+      </div>
 
 );
 }
@@ -58,10 +59,13 @@ return(
 
 
 
-/*
 
 
+/* 
 const photos = [ 
+    
+
+
   {name: 'Photo 1',
  url: "https://images.pexels.com/photos/935944/pexels-photo-935944.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
  {name: 'Photo 2',
@@ -103,5 +107,5 @@ const photos = [
       );
     }
   };
-*/
+ */
 export default Carousel;
