@@ -10,7 +10,7 @@ body {
   background-image:url('./photos/tempBackcropped2.jpg');
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: none;
 }
 
 code {
