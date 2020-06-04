@@ -14,17 +14,16 @@ body {
   background-image:url('./photos/StormyBackground.jpeg');
   background-position: top center;
   background-repeat: no-repeat;
+
+  background-color: none;
+
   background-color: #ffffff;
- dev
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
-
-
-
-
-
 

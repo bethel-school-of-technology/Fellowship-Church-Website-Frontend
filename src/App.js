@@ -7,7 +7,7 @@ import ContactUs from './screens/ContactUs';
 import BibleStudy from './screens/BibleStudy';
 import Resources from './screens/Resources';
 import Home from './screens/Home';
-import Ministries from './screens/Ministries';
+import Ministry from './screens/Ministry';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
@@ -36,7 +36,7 @@ function App() {
             <Link to='/Bible-Study'>Bible Study</Link>
           </li>
           <li>
-            <Link to='/Ministries'>Ministries</Link>
+            <Link to='/Ministry'>Ministry</Link>
           </li>
           <li>
             <Link to='/Resources'>Resources</Link>
@@ -59,7 +59,7 @@ function App() {
         <Route path='/About-Us' component={AboutUs} />
         <Route path='/Contact-Us' component={ContactUs} />
         <Route path='/Bible-Study' component={BibleStudy} />
-        <Route path='/Ministries' component={Ministries} />
+        <Route path='/Ministry' component={Ministry} />
         <Route path='/Resources' component={Resources} />
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
