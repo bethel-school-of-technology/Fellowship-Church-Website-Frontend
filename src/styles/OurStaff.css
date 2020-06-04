@@ -25,6 +25,7 @@ a {
 P { text-align: center;
     font-size: small;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
     padding-bottom: 21px;
     
 }
@@ -41,13 +42,13 @@ P { text-align: center;
 
 h1 {
     font-size: 3em;
-    color: black;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
     font-size: 2em;
-    color: black;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
