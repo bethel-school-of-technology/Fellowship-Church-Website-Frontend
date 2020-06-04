@@ -7,13 +7,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image:url('./photos/tempBackcropped2.jpg');
+ passwordreset
+  background:url('./photos/sky.PNG') no-repeat;
+  background-size: 100%;
+
+  background-image:url('./photos/StormyBackground.jpeg');
   background-position: top center;
   background-repeat: no-repeat;
+
   background-color: none;
+
+  background-color: #ffffff;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
+

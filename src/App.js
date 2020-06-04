@@ -11,6 +11,10 @@ import Ministry from './screens/Ministry';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
+ passwordreset
+import OurStaff from './screens/OurStaff';
+import Chat from './screens/Chat';
+dev
 
 
 function App() {
@@ -37,11 +41,17 @@ function App() {
           <li>
             <Link to='/Resources'>Resources</Link>
           </li>
+          <li>
+            <Link to='/Our-Staff'>Meet Our Staff</Link>
+          </li>
           <li id='Signup'>
             <Link to='/Signup'>Signup</Link>
           </li>
           <li id='Login'>
             <Link to='/Login'>Log In</Link>
+          </li>
+          <li id='Chat'>
+            <Link to='/chat'>Chat</Link>
           </li>
         </ul>
 
@@ -54,9 +64,15 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/terms-of-service' component={TermsofService} />
+ passwordreset
+        <Route path='/Our-Staff' component={OurStaff} />
+
+        <Route path='/chat' component={Chat} />
+ dev
       </div>
     </Router>
   );
 }
+
 
 export default App;
