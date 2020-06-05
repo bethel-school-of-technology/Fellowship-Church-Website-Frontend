@@ -1,9 +1,10 @@
-.mainContainer {
-    text-align: center;
-    list-style-type: none;
+#div {
+    text-align: left;
+    color: honeydew;
+    font-size: 20px;
+    
 }
-
-div.packages {
-    text-align: center;
-    list-style-type: none;
+#li {
+    font-weight: bold;
+    text-decoration-color: lavenderblush;
 }
