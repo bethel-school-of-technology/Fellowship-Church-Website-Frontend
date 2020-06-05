@@ -34,11 +34,11 @@ return(
     <div className="carousel">
         
         {selectedImage.map((item, index) => {
-          return( 
-             <div key={index} >
+       
+             <div key={index} transform="translateZ(-1128px) rotateY(-1800deg)" >
              {item}
              </div>
-             );
+            
     
         })}
   
