@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Ministries = () => (
     <div>
         <h1>Ministries of His Way</h1>
