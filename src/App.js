@@ -11,10 +11,10 @@ import Ministry from './screens/Ministry';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import TermsofService from './screens/TermsofService';
- passwordreset
+ 
 import OurStaff from './screens/OurStaff';
 import Chat from './screens/Chat';
-dev
+
 
 
 function App() {
@@ -64,11 +64,11 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/terms-of-service' component={TermsofService} />
- passwordreset
+
         <Route path='/Our-Staff' component={OurStaff} />
 
         <Route path='/chat' component={Chat} />
- dev
+ 
       </div>
     </Router>
   );

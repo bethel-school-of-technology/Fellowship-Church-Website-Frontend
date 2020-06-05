@@ -1,27 +1,33 @@
 .screen {
-  border: 1px solid #CCC;
-  margin: 20px 0;
-  position: center;
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  border: 1px solid #cccccc;
+  margin: 40px 0;
+  position: relative;
+  width: 820px;
+  height: 425px;
+  margin: 30px auto;
+  perspective: 1000px;
 }
 
 .carousel {
-  display: center;
-  width: 50%;
-  height: 15em;
-  position: relative;
-  transform: translateZ(-137px);
+  width: 100%;
+  height: 100%;
+  position: center;
+  transform: translateZ(-1128px);
   transform-style: preserve-3d;
-  transition: transform 1s;
-  max-width: 80%;
+  transition: transform 2s;
+  
 }
 
 .carousel_cell {
-  position: absolute;
+  position: relative;
+  width: 820px;
+  height: 420px;
+  left: 10px;
+  top: 0px;
   border: 2px solid black;
-  transform: translateZ(-137) rotateY(-144deg);
+  line-height: 116px;
+
+  
 }
 
 
@@ -29,18 +35,17 @@
 #goLeft{
   float: left;
   width: 10%;
-  height: 15em;
+  height: 425px;
 }
 
 #goRight{
   float: right;
   width: 10%;
-  height: 15em;
+  height: 425px;
 }
 
-
-.carouselCell:nth-child(1) { transform: rotateY(  0deg) translateZ(137px); }
-.carouselCell:nth-child(2) { transform: rotateY( 72deg) translateZ(137px); }
-.carouselCell:nth-child(3) { transform: rotateY(144deg) translateZ(137px); }
-.carouselCell:nth-child(4) { transform: rotateY(216deg) translateZ(137px); }
-.carouselCell:nth-child(5) { transform: rotateY(288deg) translateZ(137px); }
+.carouselCell:nth-child(1) { transform: rotateY(  0deg) translateZ(1128px); }
+.carouselCell:nth-child(2) { transform: rotateY( 72deg) translateZ(1128px); }
+.carouselCell:nth-child(3) { transform: rotateY(144deg) translateZ(1128px); }
+.carouselCell:nth-child(4) { transform: rotateY(216deg) translateZ(1128px); }
+.carouselCell:nth-child(5) { transform: rotateY(288deg) translateZ(1128px); }
