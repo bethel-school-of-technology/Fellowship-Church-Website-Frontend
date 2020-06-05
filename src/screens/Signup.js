@@ -48,7 +48,7 @@ function Signup(){
     function submitHandler(event) {
         // event.preventDefault();
         alert(state.username + ' was created! Welcome to the fellowship!')
-        Axios.post('http://localhost:3000/Signup', state)
+        Axios.post('http://localhost:3000/user/signup', state)
         .then(response => {
             console.log(response);       
          })
