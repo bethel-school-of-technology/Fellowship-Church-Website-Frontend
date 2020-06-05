@@ -13,7 +13,7 @@ function Signup(){
     })
             return (
             <div className='mainSignup' id='divId'>
-                <form action='/Signup' method='POST' onSubmit={submitHandler.bind(this)}>
+                <form onSubmit={submitHandler.bind(this)}>
                     <p>Please fill out the following information to sign up for an account.</p>
                     <label for='firstName'>First Name: </label>
                     <input className='firstName' id='fname' name='firstName' onChange={changeHandler.bind(this)} required={true} />
@@ -40,16 +40,14 @@ function Signup(){
 
     function changeHandler(event) {
         const value = event.target.value;
-        console.log(state);
         setState({
             ...state,
             [event.target.name]: value
         });
     }
     function submitHandler(event) {
-        event.preventDefault();
-        var data = state;
-        console.log(data)
+        // event.preventDefault();
+        alert(state.username + ' was created! Welcome to the fellowship!')
         Axios.post('http://localhost:3000/Signup', state)
         .then(response => {
             console.log(response);       

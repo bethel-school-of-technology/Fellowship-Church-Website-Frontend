@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Chat-style.css';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 
 
 class Chat extends React.Component {
