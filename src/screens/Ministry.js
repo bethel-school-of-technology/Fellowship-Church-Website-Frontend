@@ -49,4 +49,4 @@ class TodoApp extends React.Component{
 }
 
 
-export default Carousel;
+export default TodoApp;
