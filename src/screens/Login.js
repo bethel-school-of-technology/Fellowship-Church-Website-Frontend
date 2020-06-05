@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Login.css';
+import { Link } from "react-router-dom";
 
 
 class Login extends React.Component{
@@ -34,6 +35,8 @@ class Login extends React.Component{
             <input type='submit' className='loginbtn' value='Log In'  />
             <br/>
             <p>New member? Click <a className='signup' href='/signup'>here</a> to join the fellowship!</p>
+            <Link to="/login/reset">Forgot password?</Link>
+            
         </form>
         );
     }
