@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Ministry.scss';
+import '../styles/Ministry.css';
 
 
 
@@ -18,19 +18,19 @@ function Carousel() {
  
 
   const prevButton = () => {
-    x=== 0 ? setX(-100 * (selectedImage.length - 1)) : setX(x + 100);
+    x=== 0 ? setX(-100 * (selectedImage - 1)) : setX(x + 100);
   };
   
   const nextButton = () => {
-    x=== -100 * (selectedImage.length - 1) ? setX(0) : setX(x - 100)
+    x=== -100 * (selectedImage + 1) ? setX(0) : setX(x - 100)
   };
 
 
 return( 
   
-  <div className="screen" transform = 'translateZ(-137px) rotateY(-72deg)'>
+  <div className="screen" >
     <button id="goLeft" onClick={prevButton}>Previous</button>
-        
+    <button id="goRight" onClick={nextButton}>Next</button>
     <div className="carousel">
         
         {selectedImage.map((item, index) => {
@@ -43,7 +43,7 @@ return(
         })}
   
       </div> 
-      <button id="goRight" onClick={nextButton}>Next</button>
+      
   </div>
 
   );
