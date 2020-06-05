@@ -71,7 +71,6 @@ function App() {
 
         <Route path='/Our-Staff' component={OurStaff} />
         <Route path='/chat' component={Chat} />
-        <Route path='/Our-Staff' component={OurStaff} />
 
         <Route path='/chat' component={Chat} />
  {/* dev */}
