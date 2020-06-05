@@ -6,8 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
- passwordreset
+ passwordreset {
   background:url('./photos/sky.PNG') no-repeat;
   background-size: 100%;
 
@@ -21,9 +22,8 @@ body {
 
 }
 
-code {
+ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 
 }
-
