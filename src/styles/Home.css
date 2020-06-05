@@ -1,6 +1,66 @@
-div.par {
-text-align: justify;
-margin-top: 5em;
-margin-left: 10em;
-margin-right: 10em;
+
+.header {
+
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+h3 {
+
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.column {
+  padding: 10px;
+  height: auto; 
+}
+
+
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+ul {
+padding-bottom: 100px;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
