@@ -2,7 +2,6 @@ import React from 'react';
 import srpastors from "../images/srpastors.jpeg";
 import associate from "../images/associate.jpg";
 import womenspastors from "../images/womenspastors.jpg";
-import Flexbox from 'flexbox-react';
 import '../styles/OurStaff.css';
 
 
