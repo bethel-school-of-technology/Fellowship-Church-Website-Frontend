@@ -23,7 +23,7 @@ const Home = () => (
     <h3>Location</h3>
     <p>1234 Church Road, Redding California</p>
     <p>Click below for MAPQUEST directions!</p>
-    <a href="https://www.mapquest.com/near-40.58579947707732,-122.36022949218749?zoom=10" target="_blank">MAPQUEST US!</a>
+    <a href="https://www.mapquest.com/near-40.58579947707732,-122.36022949218749?zoom=10">MAPQUEST US!</a>
     
 
 </div>

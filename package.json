@@ -1,43 +1,26 @@
 {
-  "name": "fellowship-church-website-frontend",
-  "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "name": "fellowship-front-end",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-elastic-carousel": "^0.6.2",
-    "react-image-gallery": "^1.0.7",
-    "react-images-upload": "^1.2.8",
-    "react-loading-screen": "0.0.17",
-    "react-multi-carousel": "^2.5.5",
-    "react-responsive-carousel": "^3.2.7",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
-    "react-slick": "^0.26.1",
-    "react-textfield": "0.0.6",
-    "socket.io-client": "^2.3.0"
+    "react-scripts": "3.4.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bethel-school-of-technology/Fellowship-Church-Website-Frontend.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bethel-school-of-technology/Fellowship-Church-Website-Frontend/issues"
-  },
-  "homepage": "https://github.com/bethel-school-of-technology/Fellowship-Church-Website-Frontend#readme",
   "browserslist": {
     "production": [
       ">0.2%",
