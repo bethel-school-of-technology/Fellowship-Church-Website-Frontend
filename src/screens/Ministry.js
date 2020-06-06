@@ -36,15 +36,14 @@ class TodoApp extends React.Component{
   this.setState({imgIdx: n})
  }
  render(){
-  // <button onClick={() => this.back()}>Previous</button>
+ 
  let img = this.state.imgs[this.state.imgIdx];
  console.log(this.state.imgIdx)
  return(
  <div>
-   <img src={img} alt="" />
-   
-   
-   <button onClick={() => this.next()}>Next</button>
+ 	<button onClick={() => this.back()}>Previous</button>
+	 <img src={img} alt="" />
+         <button onClick={() => this.next()}>Next</button>
    
  </div>
  )
