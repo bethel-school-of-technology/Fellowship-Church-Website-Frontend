@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../styles/Ministry.css';
+import React from 'react';
+import '../styles/Ministry.scss';
 
 class TodoApp extends React.Component{
 	constructor(props) {
@@ -22,7 +22,7 @@ class TodoApp extends React.Component{
  next(){
  	let n = this.state.imgIdx
   n += 1
-  if(n == this.state.imgs.length){
+  if(n === this.state.imgs.length){
   	n = 0
 	}
   this.setState({imgIdx: n})
@@ -36,12 +36,12 @@ class TodoApp extends React.Component{
   this.setState({imgIdx: n})
  }
  render(){
-  <button onClick={() => this.back()}>Previous</button>
+  // <button onClick={() => this.back()}>Previous</button>
  let img = this.state.imgs[this.state.imgIdx];
  console.log(this.state.imgIdx)
  return(
  <div>
-   <img src={img} />
+   <img src={img} alt="" />
    
    
    <button onClick={() => this.next()}>Next</button>
